@@ -44,8 +44,22 @@ module.exports.routes = {
   '/logout' : {
     controller : 'auth',
     action     : 'logout'
-  }
+  },
 
+  '/games/:id' : {
+    controller: 'games',
+    action: 'show'
+  },
+
+  'GET /new_game' : {
+    controller: 'games',
+    action: 'new'
+  },
+
+  'POST /games': {
+    controller: 'games',
+    action: 'create'
+  }
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
