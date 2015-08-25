@@ -56,6 +56,11 @@ module.exports.routes = {
     action: 'new'
   },
 
+  'GET /players/card' : {
+    controller: 'games',
+    action: 'playerscards',
+    cors: true
+  },
   'POST /games': {
     controller: 'games',
     action: 'create'
